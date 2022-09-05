@@ -1,0 +1,35 @@
+{
+  "name": "gql-w2g",
+  "version": "1.0.0",
+  "description": "GraphQL server for w2g app",
+  "main": "index.ts",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "test": "test",
+    "watch": "nodemon --watch './**/*.{ts,graphql}' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts",
+    "dev": "tsc-watch --onSuccess \"npm run watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinkmarlin/gql-w2g.git"
+  },
+  "author": "Pink Marlin Digital LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinkmarlin/gql-w2g/issues"
+  },
+  "homepage": "https://github.com/pinkmarlin/gql-w2g#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.10.2",
+    "express": "^4.18.1",
+    "graphql": "^16.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}

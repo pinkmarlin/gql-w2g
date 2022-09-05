@@ -1,0 +1,33 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#1d3557",
+      "activityBar.background": "#457b9d",
+      "activityBarBadge.foreground": "#f5f5f5",
+      "activityBarBadge.background": "#e63946"
+    }
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "name": "jest-single-file",
+        "request": "launch",
+        "program": "${workspaceRoot}/server/node_modules/.bin/jest",
+        "args": ["${file}", "--runInBand", "--no-cache"],
+        "cwd": "${workspaceRoot}/server",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "windows": {
+          "program": "${workspaceRoot}/server/node_modules/jest/bin/jest"
+        }
+      }
+    ]
+  }
+}
