@@ -1,0 +1,7 @@
+extend type Query {
+  taxFormById(id: ID!): TaxForm!
+}
+
+type TaxForm {
+  id: ID!
+}
